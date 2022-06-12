@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import {ReactComponent as InflearnLogo} from '../assets/InflearnLogo.svg';
+import {ReactComponent as InflearnLogo} from '../assets/svg/InflearnLogo.svg';
 
 function Header() {
   return (
