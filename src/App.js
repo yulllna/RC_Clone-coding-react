@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <Reset />
-      <MainPage />
-      {/* <DetailPage />
-      <ReviewPage /> */}
+      {/* <MainPage /> */}
+      <DetailPage />
+      {/* <ReviewPage /> */}
     </div>
   );
 }
