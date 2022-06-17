@@ -37,6 +37,9 @@
     color: #4a4a4a;
     font-weight: 300;
 }
+.login-button {
+    margin-right: 0.5rem;;
+}
 .navbar-right {
     display: flex;
     align-items: center;

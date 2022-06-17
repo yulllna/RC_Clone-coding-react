@@ -1,4 +1,4 @@
-section:not(.main-banner, .apply, .main-tags) {
+section:not(.main-banner, .apply, .main-tags, .course-description ) {
     padding-top: 24px;
     padding-bottom: 24px;
 }

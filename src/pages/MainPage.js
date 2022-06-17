@@ -2,6 +2,11 @@ import React from 'react';
 import Header from '../components/Header'; 
 import Footer from '../components/Footer'; 
 import './MainPage.css'
+import MpSliderBanner from '../components/MpSliderBanner';
+import MpSliderController from '../components/MpSliderController';
+import MpSearch from '../components/MpSearch';
+import MpReview from '../components/MpReview';
+import MpApply from '../components/MpApply';
 
 function MainPage() {
   return (
@@ -9,79 +14,10 @@ function MainPage() {
         <Header />
         <main id="main">
            <section className="main-banner">
-               <div className="slider-banner">
-                    <div className="container">
-                        <div className="main-banner_left">
-                            <div className="hero-tags">
-                                <div>25% 할인</div>
-                            </div>
-                            <h1 className="banner-left_title" >디자인도 업무 자동화도 <br/>스킬 업 익스프레스
-                            </h1>
-                            <p>프로덕트 디자인, 기획, 수학, 업무 자동화!<br/>
-                            MD 선정 상반기 Best 강의</p>
-                        </div>
-                        <div className="main-banner_right">
-                            <img className="banner-pc-image" src="https://cdn.inflearn.com/public/main_sliders/10635c20-2229-4112-aa21-2445aa3a4243/%5B%EC%9D%B4%EB%B2%A4%ED%8A%B8%5D%EC%9D%B8%ED%94%84%EB%9E%9C%EB%93%9C_main_521.gif" alt="디자인도 업무 자동화도 스킬 업 익스프레스" />
-                        </div>
-                    </div>
-               </div>
-               <div className="pagenation-container">
-                   <div className="container">
-                        <div className="slider-controller"></div>
-                        <div className="divider"></div>
-                        <div className="slider-buttons"></div>
-                   </div>
-               </div>
+               <MpSliderBanner />
+               <MpSliderController />
            </section>
-           <section className="main-search">
-               <div className="container">
-                   <div className="content main-search_inner">
-                        <h1 className="search-title">배우고, 나누고, 성장하세요</h1>
-                        <div className="search_wrap">
-                            <input type="text" placeholder="배우고 싶은 지식을 입력해보세요." />
-                            <button>
-                              <span>
-                                <i className="fa-solid fa-magnifying-glass fa-lg"></i>
-                              </span>
-                            </button>
-                        </div>
-                   </div>
-               </div>
-           </section>
-           <section className="main-tags">
-                <ul className="tag-wrap">
-                    <li className="tag-item">
-                        <a href="#">#MVC</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#Spring Boot</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#Back-End</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#JPA</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#Front-End</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#Python</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#Java</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#Spring</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#게임개발</a>
-                    </li>
-                    <li className="tag-item">
-                        <a href="#">#JavaScript</a>
-                    </li>
-                </ul>
-           </section>
+                <MpSearch />
            <section className="free-courses">
                <div className="container">
                 <div className="section-header">
@@ -520,43 +456,7 @@ function MainPage() {
 					</div>
 			   </div>
            </section>
-           <section className="review">
-                <div className="container">
-                    <div className="review-left">
-                        <h1><strong className="user-cnt">898,070</strong>명이<br/>인프런과 함께합니다.</h1>
-                        <p>
-                            수년~십수년씩 커리어를 쌓고 노력해온 <br/>지식공유자들이 지식과 노하우를 공유합니다.<br/>
-                            당장 좋은 사수가 없거나, 교육을 받지 못하더라도 걱정하지 마세요.<br/>
-                            인프런에서 전문가들에게서 지식과 노하우를 배울 수 있습니다. 
-                        </p>
-                        <div className="buttons">
-                            <a className="more-reiview">
-                                <span>수강평 더보기</span>
-                                <span><i className="fa-solid fa-angle-right"></i></span>
-                            </a>
-                            <a className="request">
-                                <span>기능/강좌 요청하기</span>
-                                <span><i className="fa-solid fa-angle-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="review-right">
-                        <div className="review-card">
-                            <div className="card-top">
-                                <span className="user-name">hiccups 님(수강생)</span>
-                                <span className="date">42분 전</span>
-                            </div>
-                            <div className="card-bottom">
-                                <a href="#">
-                                    <span>스파크 머신러닝 완벽 가이드 - Part 1</span>
-                                    <span><i className="fa-solid fa-angle-right"></i></span>
-                                </a>
-                                <p>테이블 1개짜리 데이터셋 EDA/Modeling 강의는 흔한데 여러 테이블 조인해서 유의미한 컬럼 생성해보는 강의는 처음입니다. ML 엔지니어가 실무에서 어떤 일을 수행하는지 감을 잡는데 큰 도움이 될 것 같습니다.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           </section>
+           <MpReview />
            <section className="main-banner2">
                 <div className="main-banner2-content">
                     <div className="banner2-item">
@@ -582,40 +482,7 @@ function MainPage() {
                     <li><img src="images/group-logo/nc.png" alt="NC" /></li>
                 </ul>
            </section>
-           <section className="apply">
-                <div className="container">
-                    <div className="header">
-                        <h1 className="header-title">다양한 서비스를 신청하세요.</h1>
-                        <p className="subtext">인프런의 지식공유자 ˙ 비즈니스 ˙ 대학생 신청방법에 대해 알아보세요.</p>
-                    </div>
-                    <div className="apply-content">
-                        <div className="apply-box">
-                            <h2 className="subtitle">지식공유자 되기</h2>
-                            <p>9개월간 온라인 기술 강의로만 1억원!<br/>나의 지식을 나눠 사람들에게 배움의 기회를 주고, 의미있는 대가를 가져가세요.</p>
-                            <a href="#" className="button">
-                                <span>지식공유자 참여하기</span>
-                                <span className="icon"><i className="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                        <div className="apply-box">
-                            <h2 className="subtitle">인프런 비즈니스 신청</h2>
-                            <p>모든 팀원의 인프런의 강의들을 자유롭게 학습하는 환경을 제공해주세요.<br/>업무 스킬에 집중된 콘텐츠를 통해 최신 트렌드의 업무역량을 습득할 수 있습니다.</p>
-                            <a href="#" className="button">
-                                <span>비즈니스 신청하기</span>
-                                <span className="icon"><i className="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                        <div className="apply-box">
-                            <h2 className="subtitle">인프런 X 대학생</h2>
-                            <p>학교와 인프런이 함께 하여,<br/>많은 학생 분들께 정해진 커리큘럼 이외에도 필요한 학습을 보완하고, 더욱 성장할 수 있도록 도와드립니다.</p>
-                            <a href="#" className="button">
-                                <span>대학생 신청하기</span>
-                                <span className="icon"><i className="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-           </section>
+           <MpApply />
        </main>
         <Footer />
     </>
