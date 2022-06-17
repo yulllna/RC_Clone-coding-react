@@ -3,15 +3,15 @@ import { Reset } from 'styled-reset'
 import './App.css';
 import MainPage from './pages/MainPage'; 
 import DetailPage from './pages/DetailPage'; 
-import ReviewPage from './pages/ReviewPage'; 
+import CommunityPage from './pages/CommunityPage'; 
 
 function App() {
   return (
     <div className="App">
       <Reset />
-      {/* <MainPage /> */}
-      <DetailPage />
-      {/* <ReviewPage /> */}
+      <MainPage />
+      {/* <DetailPage /> */}
+      {/* <CommunityPage /> */}
     </div>
   );
 }
