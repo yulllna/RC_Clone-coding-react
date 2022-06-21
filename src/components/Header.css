@@ -38,7 +38,7 @@
     font-weight: 300;
 }
 .login-button {
-    margin-right: 0.5rem;;
+    margin-right: 0.5rem;
 }
 .navbar-right {
     display: flex;
@@ -67,6 +67,7 @@
     border: 1px solid #dbdbdb;
     padding: 4px;
     border-radius: 4px;
+    cursor: pointer;
 }
 .nav-item > .join-button {
     background-color: #ff7867;

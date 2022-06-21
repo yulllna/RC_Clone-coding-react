@@ -1,8 +1,44 @@
-import React from 'react';
+import {React, useState} from 'react';
 import './Header.css';
 import {ReactComponent as InflearnLogo} from '../assets/svg/InflearnLogo.svg';
+import Modal from './Modal';
 
 function Header() {
+    const [modalOpen, setModalOpen] = useState(false);
+    const navTitle = ['강의', '로드맵', '멘토링', '커뮤니티', '채용정보'];
+    const navCourse = ['개발 · 프로그래밍', '보안 · 네트워크', '데이터 사이언스', '크리에이티브', '직무 · 마케팅', '학문 · 외국어', '커리어', '교양', '청강대 게임스쿨'];
+
+    const navCourse1 = ['웹 개발', '프론트엔드', '백엔드', '풀스택', '모바일 앱 개발', '프로그래밍 언어', '알고리즘 · 자료구조', '데이터 사이언스', '데이터 베이스', '데브옵스 · 인프라', '개발 도구', '게임 개발'];
+    const navCourse2 = ['보안', '시스템', '클라우드', '블록체인', '기타'];
+    const navCourse3 = ['데이터 분석', '인공지능', '데이터 시각화', '데이터 수집 · 처리', '기타'];
+    const navCourse4 = ['CAD · 3D 모델링', '웹 퍼블리싱', 'UX/UI', '그래픽 디자인', '디자인 툴', '사진 · 영상', 'VR/AR', '사운드', '기타'];
+    const navCourse5 = ['오피스', '기획 · 전략 · PM', '마케팅', '업무 자동화', '금융 · 경영', '기타'];
+    const navCourse6 = ['수학', '외국어', '기타'];
+    const navCourse7 = ['취업 · 이직', '개인 브랜딩', '창업', '기타'];
+    const navCourse8 = '교양';
+
+    const navWebStep2 = ['HTML/CSS', 'Front-End', 'JavaScript', '웹 개발', 'Back-End', '웹 퍼블리싱', 'React', 'Node.js', 'Java', 'Spring', 'Vue.js', 'Python'];
+    const navFrontStep2 = ['Front-End', 'JavaScript', 'HTML/CSS', 'React', '웹 개발', 'Vue.js', '웹 퍼블리싱', 'jQuery', 'ES6', '인터렉티브 웹', '클론 코딩', '웹앱'];
+    const navBackStep2 = [];
+    const navFullStep2 = [];
+    const navMobileStep2 = [];
+    const navLangStep2 = [];
+    const navAlgorithmStep2 = [];
+    const navSienceStep2 = [];
+    const navDatabaseStep2 = [];
+    const navDevopsStep2 = [];
+    const navToolsStep2 = [];
+    const navgameStep2 = [];
+    const navCommunity = ['질문 & 답변', '자유주제', '스터디', '수강평', '멘토링 후기', '인프런 스토리']
+
+
+    const openModal = () => {
+        setModalOpen(true);
+    };
+    const closeModal = () => {
+        setModalOpen(false);
+    };
+
   return (
     <>
         <header id="header">
@@ -235,8 +271,9 @@ function Header() {
                                </div>
                                <div className="nav-item buttons">
                                     <a href="#" className="nav-item">지식공유참여</a>
-                                    <a role="button" className="login-button">로그인</a>
+                                    <a role="button" className="login-button" onClick={openModal}>로그인</a>
                                     <a role="signin" className="join-button">회원가입</a>
+                                    <Modal open={modalOpen} close={closeModal}/>
                                </div>
                            </div>
                        </div>

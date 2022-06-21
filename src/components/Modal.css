@@ -1,0 +1,135 @@
+.modal-wrap {
+  position: absolute;
+  padding: 24px;
+  margin: auto;
+  width: 360px;
+  height: 432px;
+  background-color: #fff;
+  border-radius: 6px;
+  z-index: 10;
+  top: 25vh;
+  right: 25vw;
+  border: 1px solid #999;
+}
+.modal-wrap .close {
+  display: inline-block;
+  text-align: right;
+  cursor: pointer;
+}
+.modal-wrap .brand_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 12px 0 24px;
+}
+.modal-wrap .loginform-wrap > input {
+  padding: 13px 12px;
+  width: 100%;
+  height: 48px;
+  line-height: 1.47;
+  font-size: 15px;
+  border: 1px solid #dee2e6;
+  letter-spacing: -.3px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.modal-wrap .loginform-wrap > input + input {
+  margin-top: 12px;
+}
+.modal-wrap .login-button {
+  margin: 12px 0;
+  width: 100%;
+  height: 48px;
+  border-color: #00c471;
+  font-weight: 700;
+  background-color: #00c471;
+}
+.modal-wrap .login-button > span {
+  color: #FFF;
+  font-size: 14px;
+}
+.modal-wrap .login-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.modal-wrap .login-links > a {
+  line-height: 1.38;
+  letter-spacing: -.3px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #616568;
+  border-bottom: 1px solid #858a8d;
+  cursor: pointer;
+}
+.modal-wrap .login-join {
+  position: relative;
+  margin-left: 16px;
+}
+.modal-wrap .login-join::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: -8px;
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #858a8d;
+  content: " ";
+  pointer-events: none;
+}
+.login-social-signin {
+  position: relative;
+  margin-bottom: 16px;
+}
+.login-social-signin > .login-bottom-line {
+  position: relative;
+  bottom: -8px;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #f1f3f5;
+  border: none;
+}
+.login-social-signin > span {
+  position: absolute;
+  right: 40%;
+  padding: 0 8px;
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: -.3px;
+  color: #abb0b5;
+  z-index: 11;
+  background-color: #fff;
+}
+.social-signin-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+}
+.social-signin-btns > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  cursor: pointer;
+}
+.social__button--Kakao {
+  background-color: #fae500;
+}
+.social__button--Github {
+  background-color: #3c4043;
+}
+.social__button--Facebook {
+  background-color: #325ca6;
+}
+.social__button--Apple {
+  background-color: #fff;
+}
